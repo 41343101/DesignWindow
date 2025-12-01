@@ -45,8 +45,17 @@
     <addaction name="action_A_2"/>
     <addaction name="action_C_2"/>
    </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>說明(H)</string>
+    </property>
+    <addaction name="action_H"/>
+    <addaction name="separator"/>
+    <addaction name="action_About"/>
+   </widget>
    <addaction name="menu_F"/>
    <addaction name="menu"/>
+   <addaction name="menu_H"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -148,6 +157,19 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_H">
+   <property name="text">
+    <string>說明(H)</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>關於(A)</string>
    </property>
   </action>
  </widget>
