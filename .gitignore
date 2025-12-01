@@ -1,0 +1,22 @@
+# Build artifacts
+*.o
+*.exe
+designwindow/designwindow
+moc_*.cpp
+moc_predefs.h
+ui_*.h
+debug/
+release/
+build/
+_codeql_detected_source_root
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+.qmake.stash
+.qtc_clangd/
+
+# Makefile generated
+Makefile
+Makefile.Debug
+Makefile.Release
