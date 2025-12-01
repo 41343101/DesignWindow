@@ -45,6 +45,15 @@
     <addaction name="action_A_2"/>
     <addaction name="action_C_2"/>
    </widget>
+   <widget class="QMenu" name="menu_T">
+    <property name="title">
+     <string>工具(T)</string>
+    </property>
+    <addaction name="action_Calculator"/>
+    <addaction name="action_Notepad"/>
+    <addaction name="separator"/>
+    <addaction name="action_Options"/>
+   </widget>
    <widget class="QMenu" name="menu_H">
     <property name="title">
      <string>說明(H)</string>
@@ -55,6 +64,7 @@
    </widget>
    <addaction name="menu_F"/>
    <addaction name="menu"/>
+   <addaction name="menu_T"/>
    <addaction name="menu_H"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -170,6 +180,30 @@
   <action name="action_About">
    <property name="text">
     <string>關於(A)</string>
+   </property>
+  </action>
+  <action name="action_Calculator">
+   <property name="text">
+    <string>計算機(C)</string>
+   </property>
+   <property name="toolTip">
+    <string>開啟計算機工具</string>
+   </property>
+  </action>
+  <action name="action_Notepad">
+   <property name="text">
+    <string>記事本(N)</string>
+   </property>
+   <property name="toolTip">
+    <string>開啟記事本</string>
+   </property>
+  </action>
+  <action name="action_Options">
+   <property name="text">
+    <string>選項(O)</string>
+   </property>
+   <property name="toolTip">
+    <string>開啟選項設定</string>
    </property>
   </action>
  </widget>
