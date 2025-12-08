@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mianwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 6.9.1
+** Created by: Qt User Interface Compiler version 6.4.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -16,7 +16,9 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -40,6 +42,8 @@ public:
     QAction *action_Notepad;
     QAction *action_Options;
     QWidget *centralwidget;
+    QVBoxLayout *verticalLayout;
+    QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menu_F;
     QMenu *menu;
@@ -143,26 +147,44 @@ public:
         action_N = new QAction(MainWindow);
         action_N->setObjectName("action_N");
         QIcon icon;
-        icon.addFile(QString::fromUtf8("../images/images/new.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        icon.addFile(QString::fromUtf8("../images/images/new.png"), QSize(), QIcon::Normal, QIcon::Off);
         action_N->setIcon(icon);
         action_O = new QAction(MainWindow);
         action_O->setObjectName("action_O");
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8("../images/images/open.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_O->setIcon(icon1);
         action_C = new QAction(MainWindow);
         action_C->setObjectName("action_C");
         action_S = new QAction(MainWindow);
         action_S->setObjectName("action_S");
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8("../images/images/save.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_S->setIcon(icon2);
         action_A = new QAction(MainWindow);
         action_A->setObjectName("action_A");
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8("../images/images/asave.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_A->setIcon(icon3);
         action_X = new QAction(MainWindow);
         action_X->setObjectName("action_X");
         action_U = new QAction(MainWindow);
         action_U->setObjectName("action_U");
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8("../images/images/undo.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_U->setIcon(icon4);
         action_T = new QAction(MainWindow);
         action_T->setObjectName("action_T");
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8("../images/images/cut.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_T->setIcon(icon5);
         action_A_2 = new QAction(MainWindow);
         action_A_2->setObjectName("action_A_2");
         action_C_2 = new QAction(MainWindow);
         action_C_2->setObjectName("action_C_2");
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8("../images/images/copy.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_C_2->setIcon(icon6);
         action_H = new QAction(MainWindow);
         action_H->setObjectName("action_H");
         action_About = new QAction(MainWindow);
@@ -175,6 +197,19 @@ public:
         action_Options->setObjectName("action_Options");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        verticalLayout = new QVBoxLayout(centralwidget);
+        verticalLayout->setObjectName("verticalLayout");
+        textEdit = new QTextEdit(centralwidget);
+        textEdit->setObjectName("textEdit");
+        textEdit->setStyleSheet(QString::fromUtf8("QTextEdit {\n"
+"    background-color: #1e1e1e;\n"
+"    color: #ffffff;\n"
+"    border: 1px solid #3d3d3d;\n"
+"    selection-background-color: #264f78;\n"
+"}"));
+
+        verticalLayout->addWidget(textEdit);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -193,10 +228,10 @@ public:
         MainWindow->setStatusBar(statusbar);
         toolBar = new QToolBar(MainWindow);
         toolBar->setObjectName("toolBar");
-        MainWindow->addToolBar(Qt::ToolBarArea::TopToolBarArea, toolBar);
+        MainWindow->addToolBar(Qt::TopToolBarArea, toolBar);
         toolBar_2 = new QToolBar(MainWindow);
         toolBar_2->setObjectName("toolBar_2");
-        MainWindow->addToolBar(Qt::ToolBarArea::TopToolBarArea, toolBar_2);
+        MainWindow->addToolBar(Qt::TopToolBarArea, toolBar_2);
 
         menubar->addAction(menu_F->menuAction());
         menubar->addAction(menu->menuAction());
