@@ -35,11 +35,13 @@ void MainWindow::onSaveTriggered()
     // Save the file
     QFile file(currentFilePath);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        QMessageBox::warning(this, tr("錯誤"), tr("無法儲存檔案"));
+        QMessageBox::warning(this, tr("錯誤"), 
+            tr("無法儲存檔案: %1").arg(file.errorString()));
         return;
     }
     
     QTextStream out(&file);
+    out.setEncoding(QStringConverter::Utf8);
     out << textEdit->toPlainText();
     file.close();
     
