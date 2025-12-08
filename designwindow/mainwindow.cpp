@@ -41,8 +41,8 @@ void MainWindow::saveAs()
     }
     
     QTextStream out(&file);
+    out.setEncoding(QStringConverter::Utf8);
     out << textEdit->toPlainText();
-    file.close();
     
     currentFilePath = fileName;
     
