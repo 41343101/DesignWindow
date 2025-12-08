@@ -100,7 +100,22 @@ QWidget {
 }
    </string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #3d3d3d;
+    selection-background-color: #264f78;
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
