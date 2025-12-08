@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mianwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 6.4.2
+** Created by: Qt User Interface Compiler version 6.9.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -54,8 +54,97 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(800, 600);
+        MainWindow->setStyleSheet(QString::fromUtf8("\n"
+"QMainWindow {\n"
+"    background-color: #1e1e1e;\n"
+"    color: #ffffff;\n"
+"}\n"
+"\n"
+"QMenuBar {\n"
+"    background-color: #2d2d2d;\n"
+"    color: #ffffff;\n"
+"    border-bottom: 1px solid #3d3d3d;\n"
+"}\n"
+"\n"
+"QMenuBar::item {\n"
+"    background-color: transparent;\n"
+"    padding: 4px 10px;\n"
+"}\n"
+"\n"
+"QMenuBar::item:selected {\n"
+"    background-color: #3d3d3d;\n"
+"}\n"
+"\n"
+"QMenuBar::item:pressed {\n"
+"    background-color: #505050;\n"
+"}\n"
+"\n"
+"QMenu {\n"
+"    background-color: #2d2d2d;\n"
+"    color: #ffffff;\n"
+"    border: 1px solid #3d3d3d;\n"
+"}\n"
+"\n"
+"QMenu::item {\n"
+"    padding: 5px 30px 5px 20px;\n"
+"}\n"
+"\n"
+"QMenu::item:selected {\n"
+"    background-color: #3d3d3d;\n"
+"}\n"
+"\n"
+"QMenu::separator {\n"
+"    height: 1px;\n"
+"    background-color: #3d3d3d;\n"
+"    margin: 5px 0px;\n"
+"}\n"
+"\n"
+"QToolBar {\n"
+"    background-color: #2d2d2d;\n"
+"    border: none;\n"
+"    spacing: 3px;\n"
+"    padding: 3px;\n"
+"}\n"
+"\n"
+"QToolBar::separator {\n"
+"    background-color: #3d3d3d;\n"
+""
+                        "    width: 1px;\n"
+"    margin: 3px;\n"
+"}\n"
+"\n"
+"QToolButton {\n"
+"    background-color: transparent;\n"
+"    color: #ffffff;\n"
+"    border: none;\n"
+"    padding: 5px;\n"
+"    border-radius: 3px;\n"
+"}\n"
+"\n"
+"QToolButton:hover {\n"
+"    background-color: #3d3d3d;\n"
+"}\n"
+"\n"
+"QToolButton:pressed {\n"
+"    background-color: #505050;\n"
+"}\n"
+"\n"
+"QStatusBar {\n"
+"    background-color: #2d2d2d;\n"
+"    color: #ffffff;\n"
+"    border-top: 1px solid #3d3d3d;\n"
+"}\n"
+"\n"
+"QWidget {\n"
+"    background-color: #1e1e1e;\n"
+"    color: #ffffff;\n"
+"}\n"
+"   "));
         action_N = new QAction(MainWindow);
         action_N->setObjectName("action_N");
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("../images/images/new.png"), QSize(), QIcon::Mode::Normal, QIcon::State::Off);
+        action_N->setIcon(icon);
         action_O = new QAction(MainWindow);
         action_O->setObjectName("action_O");
         action_C = new QAction(MainWindow);
@@ -89,7 +178,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 800, 24));
         menu_F = new QMenu(menubar);
         menu_F->setObjectName("menu_F");
         menu = new QMenu(menubar);
@@ -104,10 +193,10 @@ public:
         MainWindow->setStatusBar(statusbar);
         toolBar = new QToolBar(MainWindow);
         toolBar->setObjectName("toolBar");
-        MainWindow->addToolBar(Qt::TopToolBarArea, toolBar);
+        MainWindow->addToolBar(Qt::ToolBarArea::TopToolBarArea, toolBar);
         toolBar_2 = new QToolBar(MainWindow);
         toolBar_2->setObjectName("toolBar_2");
-        MainWindow->addToolBar(Qt::TopToolBarArea, toolBar_2);
+        MainWindow->addToolBar(Qt::ToolBarArea::TopToolBarArea, toolBar_2);
 
         menubar->addAction(menu_F->menuAction());
         menubar->addAction(menu->menuAction());

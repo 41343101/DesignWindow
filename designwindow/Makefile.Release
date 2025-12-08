@@ -309,6 +309,19 @@ release/moc_mainwindow.cpp: mainwindow.h \
 		C:/Qt/6.9.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtabwidget.h \
 		ui_mianwindow.h \
+		C:/Qt/6.9.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.9.1/mingw_64/include/QtGui/QAction \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenu \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QToolBar \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtoolbar.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget \
 		release/moc_predefs.h \
 		C:/Qt/6.9.1/mingw_64/bin/moc.exe
 	C:\Qt\6.9.1\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/user/Desktop/EX/DesignWindow/designwindow/release/moc_predefs.h -IC:/Qt/6.9.1/mingw_64/mkspecs/win32-g++ -IC:/Users/user/Desktop/EX/DesignWindow/designwindow -IC:/Qt/6.9.1/mingw_64/include -IC:/Qt/6.9.1/mingw_64/include/QtWidgets -IC:/Qt/6.9.1/mingw_64/include/QtGui -IC:/Qt/6.9.1/mingw_64/include/QtCore -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include mainwindow.h -o release\moc_mainwindow.cpp
@@ -537,8 +550,19 @@ release/main.o: main.cpp mainwindow.h \
 		C:/Qt/6.9.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtabwidget.h \
 		ui_mianwindow.h \
+		C:/Qt/6.9.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.9.1/mingw_64/include/QtGui/QAction \
 		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QApplication \
-		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qapplication.h
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenu \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QToolBar \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtoolbar.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
 
 release/mainwindow.o: mainwindow.cpp mainwindow.h \
@@ -741,7 +765,20 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		C:/Qt/6.9.1/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.9.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtabwidget.h \
-		ui_mianwindow.h
+		ui_mianwindow.h \
+		C:/Qt/6.9.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.9.1/mingw_64/include/QtGui/QAction \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenu \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenu.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QMenuBar \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QStatusBar \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QToolBar \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/qtoolbar.h \
+		C:/Qt/6.9.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o mainwindow.cpp
 
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 

@@ -107,7 +107,7 @@ QWidget {
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_F">
@@ -186,6 +186,10 @@ QWidget {
    <addaction name="action_C_2"/>
   </widget>
   <action name="action_N">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/images/new.png</normaloff>../images/images/new.png</iconset>
+   </property>
    <property name="text">
     <string>新增(N)</string>
    </property>
@@ -194,6 +198,10 @@ QWidget {
    </property>
   </action>
   <action name="action_O">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/images/open.png</normaloff>../images/images/open.png</iconset>
+   </property>
    <property name="text">
     <string>開啟(O)</string>
    </property>
@@ -207,6 +215,10 @@ QWidget {
    </property>
   </action>
   <action name="action_S">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/images/save.png</normaloff>../images/images/save.png</iconset>
+   </property>
    <property name="text">
     <string>儲存(S)</string>
    </property>
@@ -215,6 +227,10 @@ QWidget {
    </property>
   </action>
   <action name="action_A">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/images/asave.png</normaloff>../images/images/asave.png</iconset>
+   </property>
    <property name="text">
     <string>另存(A)</string>
    </property>
@@ -225,6 +241,10 @@ QWidget {
    </property>
   </action>
   <action name="action_U">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/images/undo.png</normaloff>../images/images/undo.png</iconset>
+   </property>
    <property name="text">
     <string>還原(U)</string>
    </property>
@@ -233,6 +253,10 @@ QWidget {
    </property>
   </action>
   <action name="action_T">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/images/cut.png</normaloff>../images/images/cut.png</iconset>
+   </property>
    <property name="text">
     <string>剪下(T)</string>
    </property>
@@ -249,6 +273,10 @@ QWidget {
    </property>
   </action>
   <action name="action_C_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/images/copy.png</normaloff>../images/images/copy.png</iconset>
+   </property>
    <property name="text">
     <string>複製(C)</string>
    </property>
