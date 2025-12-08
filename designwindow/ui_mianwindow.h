@@ -16,7 +16,9 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -40,6 +42,8 @@ public:
     QAction *action_Notepad;
     QAction *action_Options;
     QWidget *centralwidget;
+    QVBoxLayout *verticalLayout;
+    QTextEdit *textEdit;
     QMenuBar *menubar;
     QMenu *menu_F;
     QMenu *menu;
@@ -54,6 +58,92 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(800, 600);
+        MainWindow->setStyleSheet(QString::fromUtf8("\n"
+"QMainWindow {\n"
+"    background-color: #1e1e1e;\n"
+"    color: #ffffff;\n"
+"}\n"
+"\n"
+"QMenuBar {\n"
+"    background-color: #2d2d2d;\n"
+"    color: #ffffff;\n"
+"    border-bottom: 1px solid #3d3d3d;\n"
+"}\n"
+"\n"
+"QMenuBar::item {\n"
+"    background-color: transparent;\n"
+"    padding: 4px 10px;\n"
+"}\n"
+"\n"
+"QMenuBar::item:selected {\n"
+"    background-color: #3d3d3d;\n"
+"}\n"
+"\n"
+"QMenuBar::item:pressed {\n"
+"    background-color: #505050;\n"
+"}\n"
+"\n"
+"QMenu {\n"
+"    background-color: #2d2d2d;\n"
+"    color: #ffffff;\n"
+"    border: 1px solid #3d3d3d;\n"
+"}\n"
+"\n"
+"QMenu::item {\n"
+"    padding: 5px 30px 5px 20px;\n"
+"}\n"
+"\n"
+"QMenu::item:selected {\n"
+"    background-color: #3d3d3d;\n"
+"}\n"
+"\n"
+"QMenu::separator {\n"
+"    height: 1px;\n"
+"    background-color: #3d3d3d;\n"
+"    margin: 5px 0px;\n"
+"}\n"
+"\n"
+"QToolBar {\n"
+"    background-color: #2d2d2d;\n"
+"    border: none;\n"
+"    spacing: 3px;\n"
+"    padding: 3px;\n"
+"}\n"
+"\n"
+"QToolBar::separator {\n"
+"    background-color: #3d3d3d;\n"
+""
+                        "    width: 1px;\n"
+"    margin: 3px;\n"
+"}\n"
+"\n"
+"QToolButton {\n"
+"    background-color: transparent;\n"
+"    color: #ffffff;\n"
+"    border: none;\n"
+"    padding: 5px;\n"
+"    border-radius: 3px;\n"
+"}\n"
+"\n"
+"QToolButton:hover {\n"
+"    background-color: #3d3d3d;\n"
+"}\n"
+"\n"
+"QToolButton:pressed {\n"
+"    background-color: #505050;\n"
+"}\n"
+"\n"
+"QStatusBar {\n"
+"    background-color: #2d2d2d;\n"
+"    color: #ffffff;\n"
+"    border-top: 1px solid #3d3d3d;\n"
+"}\n"
+"\n"
+"QWidget {\n"
+"    background-color: #1e1e1e;\n"
+"    color: #ffffff;\n"
+"}\n"
+"   "));
         action_N = new QAction(MainWindow);
         action_N->setObjectName("action_N");
         action_O = new QAction(MainWindow);
@@ -86,6 +176,19 @@ public:
         action_Options->setObjectName("action_Options");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        verticalLayout = new QVBoxLayout(centralwidget);
+        verticalLayout->setObjectName("verticalLayout");
+        textEdit = new QTextEdit(centralwidget);
+        textEdit->setObjectName("textEdit");
+        textEdit->setStyleSheet(QString::fromUtf8("QTextEdit {\n"
+"    background-color: #1e1e1e;\n"
+"    color: #ffffff;\n"
+"    border: 1px solid #3d3d3d;\n"
+"    selection-background-color: #264f78;\n"
+"}"));
+
+        verticalLayout->addWidget(textEdit);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
